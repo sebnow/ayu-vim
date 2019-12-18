@@ -27,6 +27,7 @@ let s:palette.function  = {'dark': "#FFB454",  'light': "#F29718",  'mirage': "#
 let s:palette.special   = {'dark': "#E6B673",  'light': "#E6B673",  'mirage': "#FFC44C"}
 let s:palette.keyword   = {'dark': "#FF7733",  'light': "#FF7733",  'mirage': "#FFAE57"}
 
+let s:palette.warn      = {'dark': "#E6B450",  'light': "#FF9940",  'mirage': "#FFCC66"}
 let s:palette.error     = {'dark': "#FF3333",  'light': "#FF3333",  'mirage': "#FF3333"}
 let s:palette.accent    = {'dark': "#F29718",  'light': "#FF6A00",  'mirage': "#FFCC66"}
 let s:palette.panel     = {'dark': "#14191F",  'light': "#FFFFFF",  'mirage': "#272D38"}
@@ -258,6 +259,13 @@ hi! link diffAdded String
 "   diffLine
 "   diffSubname
 "   diffComment
+
+"}}}
+
+" ALE Support: "{{{
+" ----------------------------------------------------------------------------
+exe "hi! ALEError"        .s:fg_error     .s:bg_none       .s:fmt_none
+exe "hi! ALEWarning"      .s:fg_warn      .s:bg_none       .s:fmt_none
 
 "}}}
 "
